@@ -1,0 +1,9 @@
+while (isRunning) {
+    float currentTime = getCurrentTime();
+    float deltaTime = currentTime - lastFrameTime;
+    lastFrameTime = currentTime;
+
+    processInput();
+    update(deltaTime);
+    render();
+}
